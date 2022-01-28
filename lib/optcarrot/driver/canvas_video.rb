@@ -21,7 +21,7 @@ module Optcarrot
       end
       bin = output.pack("C*")
       File.binwrite(File.join("/OPTCARROT_TMP", File.basename(@conf.video_output, ".EXT") + ".data"), bin)
-      JS::eval("globalThis.Optcarrot.tick()")
+      JS::eval("globalThis.Optcarrot.tickVideo()")
       super
     end
   end

@@ -17,6 +17,7 @@ module Optcarrot
         sfml: :SFMLAudio,
         ao:   :AoAudio,
         wav:  :WAVAudio,
+        webaudio: :WebAudioAudio,
         none: :Audio,
       },
       input: {
