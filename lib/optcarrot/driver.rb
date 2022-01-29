@@ -25,6 +25,7 @@ module Optcarrot
         sfml: :SFMLInput,
         term: :TermInput,
         log:  :LogInput,
+        browser: :BrowserInput,
         none: :Input,
       }
     }

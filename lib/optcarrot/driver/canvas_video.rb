@@ -23,6 +23,8 @@ module Optcarrot
       File.binwrite(File.join("/OPTCARROT_TMP", File.basename(@conf.video_output, ".EXT") + ".data"), bin)
       JS::eval("globalThis.Optcarrot.tickVideo()")
       super
+    rescue => e
+      JS::eval("console.warn('#{ e.inspect }')")
     end
   end
 end
